@@ -13,4 +13,4 @@ $module = [ROOT,APP,CORE,CONTROLLER,DATA];
 set_include_path(get_include_path().PATH_SEPARATOR.implode(PATH_SEPARATOR,$module));
 spl_autoload_register('spl_autoload',false);
 
-var_dump($_SERVER['REQUEST_URI']);
+new Application;
