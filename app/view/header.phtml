@@ -1,0 +1,18 @@
+<?php
+$action = $this->getAction();
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo (isset($this->page_title) ? $this->page_title : 'PIS Club'); ?></title>
+    <link href="/static/css/style.css" media="all" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/home/index" <?php echo($action == 'index' ? 'class=active' : ''); ?>>Home page</a></li>
+        <li><a href="/home/aboutUs" <?php echo($action == 'aboutUs' ? 'class=active' : ''); ?>>About us</a></li>
+    </ul>
+</nav>
