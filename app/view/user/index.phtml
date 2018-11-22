@@ -1,0 +1,23 @@
+<?php include VIEW . 'header.phtml'; ?>
+    <a href="/user/index/">View user</a>
+    <a href="/user/edit/">Edit user</a>
+    <a href="/user/delete/">Delete user</a>
+    <h1>User list</h1>
+<?php
+
+if (array_key_exists('users', $this->view_data)) {
+    $table = '<table border=1>';
+    foreach ($this->view_data['users'] as $user) {
+        $user_info = explode(',', $user);
+        $table .= '<tr>';
+        foreach ($user_info as $item) {
+            $table .= '<td>' . $item . '</td>';
+        }
+        $table .= '</tr>';
+    }
+    $table .= '</table>';
+
+    echo $table;
+}
+?>
+<?php include VIEW . 'footer.phtml'; ?>

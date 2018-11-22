@@ -1,0 +1,4 @@
+1,admin,admin,1
+2,spl4yer,admin,1
+3,mod,mod,1
+4,guest,user,0

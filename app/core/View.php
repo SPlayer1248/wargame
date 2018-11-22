@@ -24,7 +24,8 @@ class View
         }
     }
 
-    public function getAction(){
-        return (explode('\\',$this->view_file)[1]);
+    public function getAction()
+    {
+        return (explode('\\', $this->view_file)[1]);
     }
 }
